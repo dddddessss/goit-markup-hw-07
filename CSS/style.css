@@ -98,6 +98,7 @@ button:is(:hover, :focus) {
   overflow: hidden;
 }
 
+
 .container {
   width: 1158px;
   padding: 0 15px;
@@ -134,9 +135,18 @@ button:is(:hover, :focus) {
   background-position: center;
 }
 
+
+
 /* ________________---------BASE--------______________ */
 
 /* ________________---------MAIN--------______________ */
+
+
+/* ________________---------HEADER--------______________ */
+
+
+
+
 
 .page-header {
   border-bottom: 1px solid var(--light);
@@ -145,9 +155,10 @@ button:is(:hover, :focus) {
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
-.nav-logo {
+.nav-logo-container {
   display: flex;
   align-items: center;
   min-height: 72px;
@@ -173,6 +184,7 @@ button:is(:hover, :focus) {
   margin-bottom: 0;
   margin-left: 76px;
 }
+
 .site-nav-listed {
   position: relative;
 
@@ -226,6 +238,7 @@ button:is(:hover, :focus) {
 .contact .item + .item {
   margin-left: 40px;
 }
+
 .section-hero {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -243,7 +256,6 @@ button:is(:hover, :focus) {
   color: var(--button-active-text);
 
 }
-
 
 .back-hero-foooter {
   background-color: var(--dark);

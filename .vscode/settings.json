@@ -1,0 +1,10 @@
+{
+    "prettier.prettierPath": ".prettierrc.json",
+    "prettier.requirePragma": true,
+    "prettier.configPath": ".prettierrc.json",
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.useNewCompiler": true,
+    "css.styleSheets": [
+        
+    ]
+}
