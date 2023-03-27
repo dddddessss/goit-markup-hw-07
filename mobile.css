@@ -27,7 +27,7 @@ body {
 
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  width:fit-content;
+ 
   margin-left: auto;
   margin-right: auto;
 
@@ -188,33 +188,7 @@ button:is(:hover, :focus) {
   text-decoration: 0;
 }
 
-.overlay {
 
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-    url(./images/mobile-bcg.jpg);
-
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-
-  .overlay {
-    background-image: linear-gradient(to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(./images/mobile-bcgx2.jpg);
-
-  }
-
-}
 
 
 .backdrop {
@@ -423,7 +397,7 @@ button:is(:hover, :focus) {
     position: fixed;
     width: 100%;
     height: 100%;
-    max-height: 796px;
+  
     top: 0;
     left: 0;
     margin-left: auto;
@@ -442,6 +416,12 @@ button:is(:hover, :focus) {
 
 .mobile-menu-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  height: inherit;
+  width: inherit;
   padding-top: 80px;
   padding-left: 40px;
   padding-right: 35px;
@@ -490,14 +470,15 @@ button:is(:hover, :focus) {
   }
 
   .menu-list-item {
+    display: block;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.11;
     text-transform: capitalize;
     margin-bottom: 40px;
-
   }
-
+  
+ 
 
 
 
@@ -509,8 +490,8 @@ button:is(:hover, :focus) {
     line-height: 1.11;
     color: var(--primary-brand);
     text-decoration: none;
-    margin-top: 190px;
     margin-bottom: 40px;
+   
 
   }
 
@@ -522,7 +503,8 @@ button:is(:hover, :focus) {
     color: var(--text);
     font-style: normal;
     text-decoration: none;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
+    
     
   }
 
@@ -547,11 +529,34 @@ button:is(:hover, :focus) {
 
   }
 
-  .overlay {
+
+  .overlay {  
 
     height: 432px;
-   
-
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(./images/mobile-bcg.jpg);
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  
+    .overlay {
+      background-image: linear-gradient(to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(./images/mobile-bcgx2.jpg);
+  
+    }
+  
   }
 
 
@@ -829,18 +834,17 @@ button:is(:hover, :focus) {
     width: 100%;
    }
 
-
-  .modal {
+   .modal {
     position: fixed;
 
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     
-    width: 300px;
+    max-width: 392px;
     height: 586px;
 
-    padding: 50px 5px 12px 5px;
+    padding: 72px 16px 24px 16px;
 
 
     background-color: var(--modal-color);
@@ -851,6 +855,7 @@ button:is(:hover, :focus) {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
 
 
 
@@ -1017,7 +1022,7 @@ button:is(:hover, :focus) {
   .check-policy {
     display: flex;
 
-    align-items: flex-end;
+    align-items: center;
 
     color: var(--subtle-text);
 
@@ -1259,27 +1264,7 @@ button:is(:hover, :focus) {
     cursor: pointer;
   }
 
-  .mobile-menu {
-
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    max-height: 796px;
-    top: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-    background-color: var(--body-back);
-    z-index: 10000;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  }
+  
 
 .mobile-menu-container {
   position: relative;
@@ -1350,7 +1335,6 @@ button:is(:hover, :focus) {
     line-height: 1.11;
     color: var(--primary-brand);
     text-decoration: none;
-    margin-top: 190px;
     margin-bottom: 40px;
 
   }
@@ -1363,7 +1347,7 @@ button:is(:hover, :focus) {
     color: var(--text);
     font-style: normal;
     text-decoration: none;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     
   }
 
@@ -2123,7 +2107,9 @@ button:is(:hover, :focus) {
   }
 
   .hero-header {
-
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
     line-height: 1.07;
 
   }
@@ -2136,33 +2122,30 @@ button:is(:hover, :focus) {
   .overlay {
     
     height: 436px;
-    width: 768px;
+  
     margin-left: auto;
     margin-right: auto;
-  
-    
 
-    background-image: linear-gradient (to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-
-      url(./images/tablet-bcg.jpg);
+    background-image: linear-gradient(to right,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+  url(./images/tablet-bcg.jpg);
 
 
   }
-
+  
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-
+  
     .overlay {
       background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
         url(./images/tablet-bcgx2.jpg);
-
+  
     }
-
+  
   }
 
 
@@ -2426,20 +2409,11 @@ button:is(:hover, :focus) {
   }
 
 
-
-/* 
-  @media screen and (min-width:779px),
-  (max-width:1199px) {
-
-    .container-tablet {
-
-      max-width: 582px;
-      padding: 0 15px;
-      margin: 0 auto;
-    }
-  } */
-
-
+  .container-tablet {
+    width: 584px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .header-team {
     margin-bottom: 72px;
@@ -2456,7 +2430,11 @@ button:is(:hover, :focus) {
   .team-list .item:not(:last-child) {
     margin-bottom: 0;
   }
-
+  
+  .team-list .item {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
 
   .section-customers {
@@ -2687,18 +2665,25 @@ button:is(:hover, :focus) {
 
   .container {
    
-    padding-left: 156px;
-    padding-right: 156px;
-    width: 1440px;
+    width: 1158px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
+    
   }
 
   .contact {
     display: flex;
     gap: 40px;
+  
 
   }
+  .contacts {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+
 
 .contacts {
   display: block;
@@ -2709,15 +2694,22 @@ button:is(:hover, :focus) {
 
   .nav-logo-container {
 
-    padding: 24px 156px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .site-nav {
     margin-left: 76px;
   }
+  
+  .site-nav-listed.active::after {
+    bottom: -27px;
+
+  }
+  
 
   .overlay {
-    width: 1440px;
+    width: 100%;
     height: 600px;
     
 
