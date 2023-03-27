@@ -52,7 +52,7 @@
               </li>
             </ul>
   
-            <button type="button"  data-menu-open class="mobile-menu-button">
+            <button type="button"  data-menu-open class="mobile-menu-open">
               <svg class="mobile-menu-icon" width="32" height="22">
                 <use href="./images/icons/symbol-defs.svg#icon-lines"></use>
               </svg>
@@ -66,12 +66,12 @@
               <li class="item">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="contacts unline textcolor"
+                  class="contacts unline email"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="item">
-                <a href="tel:+110001111111" class="contacts unline textcolor"
+                <a href="tel:+110001111111" class="contacts unline"
                   >+11 (000) 111-11-11</a
                 >
               </li>
@@ -82,33 +82,31 @@
   
         
   
-          <div class="mobile-menu container" data-menu>
-            <button type="button" class="mobile-menu-close" data-menu-close>
+          <div class="mobile-menu" data-menu>
+
+            <div class="container mobile-menu-container">
+             <button type="button" class="mobile-menu-close" data-menu-close>
               <svg class="mobile-close-icon" width="8" height="8">
                 <use href="./images/icons/symbol-defs.svg#icon-close"></use>
               </svg>
-            </button>
+             </button>
   
-            <ul class="menu-list list">
-              <li class="menu-list-item"> <a href="./index.html" class="unline">Studio</a></li>
-              <li class="menu-list-item"> <a href="./portfolio.html" class="unline">Portfolio</a></li>
-              <li class="menu-list-item-c"><a href="./contacts.html" class="unline">Contacts</a></li>
-            </ul>
+             <ul class="menu-list list">
+              <li class="menu-list-item"> <a href="./index.html" class="unline navy">Studio</a></li>
+              <li class="menu-list-item"> <a href="./portfolio.html" class="unline navy">Portfolio</a></li>
+              <li class="menu-list-item"><a href="./contacts.html" class="unline navy">Contacts</a></li>
+             </ul>
             
-            <address class="menu-address">
+            
+             <address class="menu-address">
               <a href="tel:+110001111111" class="contact-menu-tel"
                 >+11 (000) 111-11-11</a>
-            </address>
-            <address class="menu-address-em">
+           
               <a href="mailto:info@devstudio.com" class="contact-menu-em"
                 >info@devstudio.com</a>
-            </address>>
-  
-  
-           
-  
-  
-            <div class="menu-bottom-icons">
+             </address>
+             
+             <div class="menu-bottom-icons">
               <ul class="bottom-icon-list list">
                 <li>
                   <a href="" class="bottom-item">
@@ -147,13 +145,16 @@
                   </a>
                 </li>
               </ul>
-            </div>
+             </div>
+
+
+           </div>
           </div>
-        </div>
-      </div>
+       </div>
+      
         
   
-      </header>
+    </header>
 
     <!-- MAIN -->
     <main>
@@ -379,7 +380,7 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer back-hero-foooter">
-      <div class="container container-footer container-desk">
+      <div class="container container-footer">
         <div class="logologo">
           <a href="./index.html" class="logo">
             <span class="logo-web">Web</span
