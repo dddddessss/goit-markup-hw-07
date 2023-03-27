@@ -1041,7 +1041,7 @@ button:is(:hover, :focus) {
     border-radius: 2px;
     cursor: pointer;
     background-color: var(--light);
-    background-image: url(../images/icons/agreed.svg);
+    background-image: url(./images/icons/agreed.svg);
     background-repeat: no-repeat;
     background-position: center;
 
