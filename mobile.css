@@ -27,7 +27,7 @@ body {
 
   font-family: Roboto, sans-serif;
   font-size: 16px;
- 
+
   margin-left: auto;
   margin-right: auto;
 
@@ -198,7 +198,7 @@ button:is(:hover, :focus) {
   width: inherit;
   height: 100%;
 
- 
+
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -343,8 +343,8 @@ button:is(:hover, :focus) {
 
 
 
-  
-@media screen and (min-width: 320px ) {
+
+@media screen and (min-width: 320px) {
 
   .container {
 
@@ -397,7 +397,7 @@ button:is(:hover, :focus) {
     position: fixed;
     width: 100%;
     height: 100%;
-  
+
     top: 0;
     left: 0;
     margin-left: auto;
@@ -414,19 +414,19 @@ button:is(:hover, :focus) {
 
   }
 
-.mobile-menu-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-  height: inherit;
-  width: inherit;
-  padding-top: 80px;
-  padding-left: 40px;
-  padding-right: 35px;
-  padding-bottom: 40px;
-}
+  .mobile-menu-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: inherit;
+    width: inherit;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+  }
 
   .mobile-menu.is-open {
     opacity: 1;
@@ -452,20 +452,20 @@ button:is(:hover, :focus) {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--accent);
-   
+
     line-height: 0;
 
     transition:
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
   }
 
   .mobile-menu-close:is(:hover, :focus) {
 
     background-color: var(--pressed-state);
-  
+
     fill: var(--light);
   }
 
@@ -477,8 +477,8 @@ button:is(:hover, :focus) {
     text-transform: capitalize;
     margin-bottom: 40px;
   }
-  
- 
+
+
 
 
 
@@ -491,7 +491,7 @@ button:is(:hover, :focus) {
     color: var(--primary-brand);
     text-decoration: none;
     margin-bottom: 40px;
-   
+
 
   }
 
@@ -504,8 +504,8 @@ button:is(:hover, :focus) {
     font-style: normal;
     text-decoration: none;
     margin-bottom: 40px;
-    
-    
+
+
   }
 
   .bottom-icon-list {
@@ -536,7 +536,7 @@ button:is(:hover, :focus) {
 
 
 
-  .overlay {  
+  .overlay {
 
     height: 432px;
     margin-left: auto;
@@ -545,24 +545,24 @@ button:is(:hover, :focus) {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
       url(./images/mobile-bcg.jpg);
-  
+
     background-repeat: no-repeat;
     background-size: cover;
-  
+
   }
-  
+
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  
+
     .overlay {
       background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
         url(./images/mobile-bcgx2.jpg);
-  
+
     }
-  
+
   }
 
 
@@ -625,7 +625,7 @@ button:is(:hover, :focus) {
   /* <!-________________- SECTION TEAM ____-->  */
 
 
-   
+
   .header-team {
 
     margin-bottom: 72px;
@@ -676,6 +676,7 @@ button:is(:hover, :focus) {
     column-gap: 16px;
     row-gap: 72px;
   }
+
   .cust-item {
     display: block;
     max-width: 190px;
@@ -693,7 +694,7 @@ button:is(:hover, :focus) {
     height: 88px;
     border: 1px solid var(--subtle-text);
     border-radius: 4px;
-    
+
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -836,17 +837,17 @@ button:is(:hover, :focus) {
   /* <<<<<<<<<<<<<<<<<MODAL>>>>>>>>>>>>>> */
 
 
-   .backdrop {
+  .backdrop {
     width: 100%;
-   }
+  }
 
-   .modal {
+  .modal {
     position: fixed;
 
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     max-width: 392px;
     height: 586px;
 
@@ -1217,7 +1218,7 @@ button:is(:hover, :focus) {
 }
 
 
-@media screen and (min-width: 480px) { 
+@media screen and (min-width: 480px) {
 
   .container {
 
@@ -1228,7 +1229,7 @@ button:is(:hover, :focus) {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
 
   .address {
     display: none;
@@ -1270,15 +1271,15 @@ button:is(:hover, :focus) {
     cursor: pointer;
   }
 
-  
 
-.mobile-menu-container {
-  position: relative;
-  padding-top: 80px;
-  padding-left: 40px;
-  padding-right: 35px;
-  padding-bottom: 40px;
-}
+
+  .mobile-menu-container {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+  }
 
   .mobile-menu.is-open {
     opacity: 1;
@@ -1304,20 +1305,20 @@ button:is(:hover, :focus) {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--accent);
-   
+
     line-height: 0;
 
     transition:
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
   }
 
   .mobile-menu-close:is(:hover, :focus) {
 
     background-color: var(--pressed-state);
-  
+
     fill: var(--light);
   }
 
@@ -1354,7 +1355,7 @@ button:is(:hover, :focus) {
     font-style: normal;
     text-decoration: none;
     margin-bottom: 40px;
-    
+
   }
 
   .bottom-icon-list {
@@ -1384,7 +1385,7 @@ button:is(:hover, :focus) {
   .overlay {
 
     height: 432px;
-   
+
 
   }
 
@@ -1450,7 +1451,7 @@ button:is(:hover, :focus) {
   /* <!-________________- SECTION TEAM ____-->  */
 
 
-   
+
   .header-team {
 
     margin-bottom: 72px;
@@ -1501,6 +1502,7 @@ button:is(:hover, :focus) {
     column-gap: 16px;
     row-gap: 72px;
   }
+
   .cust-item {
     display: block;
     max-width: 190px;
@@ -1518,7 +1520,7 @@ button:is(:hover, :focus) {
     height: 88px;
     border: 1px solid var(--subtle-text);
     border-radius: 4px;
-    
+
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1661,9 +1663,9 @@ button:is(:hover, :focus) {
   /* <<<<<<<<<<<<<<<<<MODAL>>>>>>>>>>>>>> */
 
 
-   .backdrop {
+  .backdrop {
     width: 100%;
-   }
+  }
 
 
   .modal {
@@ -1672,7 +1674,7 @@ button:is(:hover, :focus) {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     width: 392px;
     height: 586px;
 
@@ -1735,7 +1737,7 @@ button:is(:hover, :focus) {
     margin-bottom: 16px;
 
     font-size: 16px;
-    
+
     font-weight: 500;
     line-height: 1.5;
 
@@ -2045,14 +2047,14 @@ button:is(:hover, :focus) {
 
 
 @media screen and (min-width: 768px) {
- 
+
 
   .container {
-   width: 768px;
-   margin-left: auto;
+    width: 768px;
+    margin-left: auto;
     margin-right: auto;
-  
-    
+
+
   }
 
 
@@ -2110,7 +2112,7 @@ button:is(:hover, :focus) {
   }
 
   .section-hero {
-  
+
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -2129,32 +2131,32 @@ button:is(:hover, :focus) {
 
 
   .overlay {
-    
+
     height: 436px;
-  
+
     margin-left: auto;
     margin-right: auto;
 
     background-image: linear-gradient(to right,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-  url(./images/tablet-bcg.jpg);
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(./images/tablet-bcg.jpg);
 
 
   }
-  
+
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  
+
     .overlay {
       background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
         url(./images/tablet-bcgx2.jpg);
-  
+
     }
-  
+
   }
 
 
@@ -2165,7 +2167,7 @@ button:is(:hover, :focus) {
 
   .mobile-menu {
     display: none;
-    
+
   }
 
   .mobile-menu-open {
@@ -2173,7 +2175,7 @@ button:is(:hover, :focus) {
 
   }
 
-  
+
 
 
   .modal {
@@ -2238,12 +2240,12 @@ button:is(:hover, :focus) {
     color: var(--dark);
   }
 
-  
+
   .form-title {
     font-size: 16px;
   }
 
-  
+
 
   .form-input {
     display: block;
@@ -2282,7 +2284,7 @@ button:is(:hover, :focus) {
     margin-bottom: 16px;
   }
 
-  
+
 
   .form-comment {
     display: block;
@@ -2441,7 +2443,7 @@ button:is(:hover, :focus) {
   .team-list .item:not(:last-child) {
     margin-bottom: 0;
   }
-  
+
   .team-list .item {
     margin-left: 0;
     margin-right: 0;
@@ -2513,7 +2515,7 @@ button:is(:hover, :focus) {
       flex-wrap: wrap;
       gap: 24px;
 
-     
+
       padding: 0 15px;
       margin: 0 auto;
     }
@@ -2672,23 +2674,24 @@ button:is(:hover, :focus) {
 
 
 @media screen and (min-width: 1200px) {
-  
+
 
   .container {
-   
+
     width: 1158px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    
+
   }
 
   .contact {
     display: flex;
     gap: 40px;
-  
+
 
   }
+
   .contacts {
     font-size: 16px;
     line-height: 1.5;
@@ -2696,12 +2699,13 @@ button:is(:hover, :focus) {
 
 
 
-.contacts {
-  display: block;
-}
-.email {
-  margin-bottom: 0;
-}
+  .contacts {
+    display: block;
+  }
+
+  .email {
+    margin-bottom: 0;
+  }
 
   .nav-logo-container {
 
@@ -2712,19 +2716,19 @@ button:is(:hover, :focus) {
   .site-nav {
     margin-left: 76px;
   }
-  
+
   .site-nav-listed.active::after {
     bottom: -27px;
 
   }
-  
+
 
   .overlay {
     max-width: 1440px;
     width: 100%;
     height: 600px;
-    
-    
+
+
 
     background-image: linear-gradient(to right,
         rgba(46, 47, 66, 0.7),
@@ -2751,12 +2755,12 @@ button:is(:hover, :focus) {
 
   }
 
-  
-  
+
+
 
 
   .section-hero {
-    
+
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -2790,7 +2794,7 @@ button:is(:hover, :focus) {
 
   }
 
- 
+
 
   .feat .item {
     width: 264px;
@@ -2884,4 +2888,3 @@ button:is(:hover, :focus) {
 
 
 }
-
