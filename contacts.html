@@ -162,6 +162,7 @@
         <button data-modal-open type="button" class="button-hero">Order Service</button>
 
         
+        <!-- 5465465465465413546546 -->
 <div class="menu-order">
   <div class="menu-order__container container">
     <button type="button" class="menu-roder__close">
@@ -190,6 +191,48 @@
         </div>
       </li>
     </ul>
+    
+
+    <form class="menu-order__form">
+         <div class="menu-order__information">
+            <label for="name" class="form-label">Personal information</label>
+              <input type="text" name="name" id="name" class="form-input" placeholder="Name">
+            <label for="surname" class="form-label">Surname</label>   
+              <input type="text" name="surname" id="surname" class="form-input" placeholder="Surname"></div>
+
+        <div class="menu-order__email">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" class="footer-input" placeholder="Enter your email">
+          </div>      
+
+        <div class="menu-order__phone">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" name="phone" id="phone" class="form-input" placeholder="Phone number"> 
+        </div>  
+         
+      <div class="menu-order__card">
+        <label for="card" class="form-label">Card number</label>
+       <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="Enter card">
+       <svg class="menu-order__form-icon" width="32" height="21">
+        <use href=""> </use>
+       </svg>
+      </div>
+ 
+      <div class="menu-order_-comment">
+                <label for="message" class="label-comment">Comment</label>
+                <textarea
+                  name="user-comment"
+                  id="message"
+                  class="form-comment"
+                  placeholder="Enter text">
+                </textarea>
+              </div>
+
+    <button type="submit" class="menu-order__submit">Submit</button>
+    </form>
+
+     
+
   </div>
 </div>
 
