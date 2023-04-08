@@ -40,19 +40,22 @@
     <ul class="menu-order__list">
       <li class="menu-order__item">
         <div class="menu-order__card">
-          <img src="./images/buy-now-1-mobile@1x.png" alt="chocolate" width="84" />
+          <img srcset="./images/buy-now-1-mobile@1x.png 1x, ./images/buy-now-1-desktop-tablet@2x.png 2x" 
+          src="./images/buy-now-1-mobile@1x.png" alt="chocolate" width="" class="img-mo"/>
           <button class="menu-order__value" type="button">100 g</button>
         </div>
       </li>
       <li class="menu-order__item">
         <div class="menu-order__card">
-          <img src="./images/buy-now-2-mobile@1x.png" alt="chocolatewhiteblack" width="84" />
+          <img srcset="./images/buy-now-2-mobile@1x.png 1x, ./images/buy-now-2-desktop-tablet@2x.png 2x"
+          src="./images/buy-now-2-mobile@1x.png" alt="chocolatewhiteblack" width="" class="img-mo" />
           <button class="menu-order__value" type="button">100 g</button>
         </div>
       </li>
       <li class="menu-order__item">
         <div class="menu-order__card">
-          <img src="./images/buy-now-3-mobile@1x.png" alt="chocolateplate" width="84" />
+          <img srcset="./images/buy-now-3-mobile@1x.png 1x, ./images/buy-now-3-desktop-tablet@2x.png 2x" 
+          src="./images/buy-now-3-mobile@1x.png" alt="chocolateplate" width="" class="img-mo"/>
           <button class="menu-order__value" type="button">100 g</button>
         </div>
       </li>
@@ -88,14 +91,9 @@
        
       </div>
  
-      <div class="menu-order_comment">
+      <div class="menu-order__comment">
                 <label for="message" class="label-comment">Comment</label>
-                <textarea
-                  name="user-comment"
-                  id="message"
-                  class="form-comment"
-                  placeholder="Enter text">
-                </textarea>
+                <textarea name="user-comment" id="message" class="form-comment" placeholder="Enter text"></textarea>
               </div>
 
     <button type="submit" class="menu-order__submit">Submit</button>

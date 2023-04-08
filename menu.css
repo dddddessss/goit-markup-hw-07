@@ -26,9 +26,10 @@ p {
     margin: 0;
 }
 
-a {
+a, li {
     margin: 0;
     padding: 0;
+    list-style: 0;
 }
 
 ul {
@@ -66,10 +67,11 @@ input {
     text-decoration: 0;
 }
 
-::placeholder {
-    margin: 0;
-    padding: 0;
-}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 
 
 @media screen and (min-width: 375px) {
@@ -82,10 +84,15 @@ input {
         padding-top: 32px;
         padding-left: 24px;
         padding-right: 24px;
+        padding-bottom: 32px;
         margin-left: auto;
         margin-right: auto;
         background-color: rgba(250, 250, 250, 1);
 
+    }
+
+    .menu-order .container-menu {
+        position: relative;
     }
 
     .menu-order__close {
@@ -101,7 +108,7 @@ input {
         height: 24px;
 
         border: 0;
-        background-color: #ffffff;
+        background-color: rgba(250, 250, 250, 1);
         margin: 0;
         padding: 0;
 
@@ -124,6 +131,7 @@ input {
 
     .menu-order__label {
         margin-bottom: 32px;
+
         font-weight: 600;
         font-size: 20px;
         line-height: calc(24/20);
@@ -142,13 +150,17 @@ input {
 
         width: 263px;
         padding: 8px 16px;
-        margin-left: auto;
-        margin-right: auto;
-
+        
+        
 
         background-color: rgba(255, 255, 255, 1);
+        border: 1px solid #FFFFFF;
+        border-radius: 15px;
 
 
+    }
+    .img-mo {
+        width: 84px;
     }
 
     .menu-order__value {
@@ -186,13 +198,14 @@ input {
     .menu-order__email,
     .menu-order__phone,
     .menu-order__credit,
-    .menu-order_comment {
+    .menu-order__comment {
 
         text-align: start;
         margin-bottom: 18px;
     }
 
-    .form-label {
+    .form-label,
+    .label-comment {
         display: block;
         margin-bottom: 8px;
     }
@@ -212,26 +225,32 @@ input {
         margin: 0;
         padding: 14px 18px;
 
+        font-size: 14px;
+        line-height: calc(17/14);
+
         color: rgba(64, 64, 64, 0.3);
         border: 1.5px solid rgba(17, 17, 17, 0.05);
     }
 
     .form-comment {
-        min-height: 91px
-        resize:none;
-
+        min-height: 91px;
+        resize: none;
+        border: none; 
     }
 
-    .form-comment::placeholder {
+    .form-comment::placeholder,
+    .form-input::placeholder {
 
-        font-size: 12px;
-        line-height: 1.17;
-        color: var(--modal-overlay);
+        font-size: 14px;
+        line-height: calc(17/14);
+        color: rgba(64, 64, 64, 0.3);
       }
-    
+
       .form-comment:focus {
         border: 1px solid var(--primary-brand);
       }
+    
+    
 
 
 
@@ -248,8 +267,115 @@ input {
 
     }
 
+    .menu-order__submit {
+        display: block;
+        min-width: 109px;
+        min-height: 41px;
+
+        background-color: orange;
+        color: #ffffff;
+        border-radius: 100px;
+        border: none;
 
 
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) {
+
+.container-menu {
+        width: 609px;
+        height: 100%;
+        padding-top: 48px;
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-bottom: 48px;
+
+}
+
+.menu-order__label {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: calc(28/24);
+
+
+}
+
+.menu-order__list {
+    margin-bottom: 0;
+    display: inline-flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+
+
+.menu-order__card {
+  
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+
+    width: 160px;
+    height: 196px;
+ 
+
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+
+
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+
+
+}
+  
+.menu-order__item:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+.img-mo {
+    width: 120px;
+}
+
+.menu-order__form {
+    
+    font-size: 18px;
+    line-height: calc(18/14);
+
+
+}
+
+.form-comment::placeholder,
+.form-input::placeholder {
+
+    font-size: 18px;
+    line-height: calc(22/18);
+  
+  }
+
+
+  .form-input {
+    width: 246px;
+
+  }
+  .input {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 21px;
+  }
+
+  .menu-order__email .form-input,
+  .menu-order__phone .form-input,
+  .menu-order__credit .form-input,
+  .menu-order__comment .form-input {
+    width: 100%;
+  }
 
 
 }
