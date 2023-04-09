@@ -64,8 +64,6 @@ button {
 
 
 
-
-
 .hiddenvisualy {
     position: absolute;
     width: 1px;
@@ -82,6 +80,10 @@ button {
 
 
 @media screen and (min-width: 375px) {
+
+    .wrapper {
+        width: 100%;
+    }
 
     .container-advantages {
         
