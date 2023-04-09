@@ -76,14 +76,38 @@ input {
     margin: 0;
     border: 0;
     list-style: none;
-    text-decoration: 0;
+    text-decoration: none;
 }
 
 
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     
+  
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .wrapper.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 
-
+   
 
 @media screen and (min-width: 375px) {
+       
+
+.wrapper {
+    width: 100%;
+    
+   
+}
 
     .container-menu {
 
@@ -102,6 +126,7 @@ input {
 
     .menu-order .container-menu {
         position: relative;
+        z-index: 999;
     }
 
     .menu-order__close {

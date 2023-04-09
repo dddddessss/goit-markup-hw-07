@@ -87,7 +87,7 @@ button {
         
         width: 375px;
         max-width: 375px;
-        
+        height: 100%;
         padding: 20px;
 
         margin-left: auto;

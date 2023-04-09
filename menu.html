@@ -16,6 +16,7 @@
        rel="stylesheet"
        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
      />
+     
      <link rel="stylesheet" href="./menu.css" />
    </head>
 
@@ -24,9 +25,9 @@
   
 
 
-<div class="menu-order">
-  <div class="container-menu">
-    <button type="button" class="menu-order__close">
+<div class="wrapper is-hidden menu-order" >
+  <div class="container-menu" data-modal-buy>
+    <button type="button" class="menu-order__close" data-modal-buy-close>
       <svg class="mobile-close-icon" width="12" height="12">
         <use href="./images/icons22222/symbol-defs.svg#icon-close"></use>
       </svg>
@@ -83,7 +84,7 @@
          
       <div class="menu-order__credit">
         <label for="credit" class="form-label">Card number</label>
-       <input id="credit" name="credit" id="credit" class="form-input" placeholder="Enter card">
+       <input type="number" name="credit" id="credit" class="form-input" placeholder="Enter card">
 
        <!-- <svg class="menu-order__form-icon" width="22" height="13">
         <use href="./images/icons/symbol-defs#icon-mastercard"> </use>
@@ -103,5 +104,5 @@
 
   </div>
 </div>
-
+<script src="./js/modal_buy_menu.js"></script>
 </body>
