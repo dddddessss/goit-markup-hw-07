@@ -22,8 +22,15 @@
 
 
 <body>
+  
+
 
 <section class="advantages">
+
+
+  <button class="button modal-btn"  type="button" id="modalBtn">OPEN</button>
+  
+
     <h1 class="hiddenvisualy">benefits</h1>
     <div class="container-advantages">
       <ul class="advantages__list list">
@@ -72,16 +79,18 @@
         </li>
       </ul>
       
-          <button type="button" data-modal-buy-open>OPEN</button>
+          <button class="button modal-btn" type="button" id="modalBtn"> oooo</button>
+
+
 
 
     </div>
   </section>
   
 
-  <div class="wrapper is-hidden" data-modal-buy>
-    <div class="container-menu menu-order">
-      <button type="button" class="menu-order__close" data-modal-buy-close>
+  <div class="wrapper modal" id="simpleModal" >
+    <div class="container-menu menu-order modal-content">
+      <button type="button" class="menu-order__close closeBtn" data-modal-buy-close>
         <svg class="mobile-close-icon" width="12" height="12">
           <use href=""></use>
         </svg>
@@ -89,7 +98,7 @@
       <h2 class="menu-order__label">
         <span class="menu-order__label-buy">BUY</span> NOW </h2>
   
-  
+        <span class="closeBtn">&times;</span>
   
   
       <ul class="menu-order__list">
@@ -167,4 +176,5 @@
 
 
  <script src="./js/modal_buy_menu.js"></script>
+ <script src="./bn.js"></script>
 </body>
