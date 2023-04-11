@@ -546,7 +546,7 @@ button:is(:hover, :focus) {
     background-image: linear-gradient(to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(./images/mobile-bcg.jpg);
+      url(./images/mobile-bcg.webp);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -561,7 +561,7 @@ button:is(:hover, :focus) {
       background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
-        url(./images/mobile-bcgx2.jpg);
+        url(./images/mobile-bcg-2x.webp)
 
     }
 
@@ -2142,7 +2142,7 @@ button:is(:hover, :focus) {
     background-image: linear-gradient(to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(./images/tablet-bcg.jpg);
+      url(./images/tablet-bcg.webp);
 
 
   }
@@ -2155,7 +2155,7 @@ button:is(:hover, :focus) {
       background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
-        url(./images/tablet-bcgx2.jpg);
+        url(./images/tablet-bcg-2x.webp);
 
     }
 
@@ -2735,7 +2735,7 @@ button:is(:hover, :focus) {
     background-image: linear-gradient(to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(./images/people-office.jpg);
+      url(./images/people-office.webp);
 
 
   }
@@ -2748,7 +2748,7 @@ button:is(:hover, :focus) {
       background-image: linear-gradient(to right,
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)),
-        url(./images/people-officex2.jpg);
+        url(./images/people-office-2x.webp);
 
 
 
